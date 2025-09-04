@@ -1,1 +1,167 @@
-<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Helvetica&display=swap" rel="stylesheet" /><link href="./css/main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v1_3"><div class="v5_2"></div><div class="v4_144"></div><div class="v1_4"></div><div class="v1_11"><div class="v1_12"><div class="v1_13"></div><div class="v1_14"></div><div class="v1_15"></div><div class="v1_16"></div></div><div class="v1_17"></div><div class="v1_18"></div></div><span class="v2_19">@alitah</span><span class="v4_55">Nia Aliyah</span><span class="v4_51">Available now</span><span class="v4_52">-</span><div class="v4_81"></div><div class="v4_54"></div><div class="v4_136"></div><div class="v4_138"><div class="v4_139"></div><div class="v4_140"></div></div><div class="v4_142"></div><span class="v4_145">5k</span><span class="v4_148">362 videos</span><span class="v4_150">546 photos</span><div class="v4_151"></div><div class="v4_159"></div><span class="v4_156">Explicit Content</span><span class="v4_160">+18 Livestream</span><div class="v4_158"></div><div class="v4_164"></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-card {
+      background: #fff;
+      width: 450px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Banner */
+    .cover {
+      background: url('banner.jpg') center/cover no-repeat;
+      height: 160px;
+      position: relative;
+    }
+
+    /* Profile picture */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .content {
+      padding: 80px 20px 30px;
+    }
+
+    /* Name + Verified */
+    .name {
+      font-size: 22px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .verified {
+      color: #1da1f2;
+      font-size: 18px;
+    }
+
+    /* Stats */
+    .stats {
+      margin: 12px 0;
+      font-size: 14px;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .stats span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Handle + status */
+    .handle {
+      font-size: 15px;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: 8px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #00c200;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .buttons button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 80%;
+      margin: 12px auto;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      border-radius: 30px;
+      background: #00aaff;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .buttons button:hover {
+      background: #0088cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <!-- Banner -->
+    <div class="cover">
+      <img src="profile.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="name">
+        Nia Aliyah 
+        <span class="verified">✔</span>
+      </div>
+
+      <div class="stats">
+        <span>📷 546 photos</span>
+        <span>🎥 362 videos</span>
+        <span>❤️ 5k</span>
+      </div>
+
+      <div class="handle">
+        @alitah 
+        <span class="status"><span class="dot"></span> Available now</span>
+      </div>
+
+      <div class="buttons">
+        <button>🔒 Explicit Content</button>
+        <button>👁️ +18 Livestream</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
